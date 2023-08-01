@@ -5,7 +5,7 @@ Custom code from the SLC Libraries website
 Remember to change colours, branding, images before saving on a live page.
 
 ### lookandfeel.css
-This code goes in Admin -> Look & Feel -> Custom JS/CSS -> Custom JS/CSS Code -> JS/CSS Code.
+This code goes in Admin -> Look & Feel (Beta) -> System Settings -> Pages Look & Feel -> Custom JS/CSS -> Custom CSS.
 
 ### primo_searchbox.html
-Copy and paste this code anywhere you want a search box.
+Bootstrap 5 version coming soon!
