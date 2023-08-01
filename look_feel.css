@@ -9,7 +9,7 @@
 
 /* GLOBAL STYLES */
 ::selection {background: #ffff99; color: black;}
-* {border-radius: .462rem;}
+:root {--bs-border-radius: .462rem;}
 body {font-weight: 400; font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;}
 h1 {font-weight: 600;}
 a:link {color: #003C8D;}
@@ -19,7 +19,9 @@ a:active {color: #2E89FF;}
 #s-lib-scroll-top .fa-square-o {color: #e1251b; border-color: #A01713;}
 #s-lib-scroll-top .fa-angle-double-up {color: #e1251b; border-color: #A01713;}
 #s-lib-public-main, #s-lib-public-header {width: 95%;}
-.accordion {border-radius: .462rem;}
+.accordion {border-radius: .462rem; --bs-accordion-inner-border-radius: .462rem;}
+.dropdown-menu {--bs-dropdown-border-radius: .462rem; --bs-dropdown-inner-border-radius: .462rem;}
+.az-public-collapsible-box .accordion-item {border-radius: .462rem; border-color: black;}
 
 /* BUTTONS */
 .btn-primary {background-color: #e1251b; border-color: #b71d15;}
@@ -43,6 +45,7 @@ a:active {color: #2E89FF;}
     --bs-pagination-disabled-color: #fff;
     --bs-pagination-disabled-bg: #414042;
     --bs-pagination-disabled-border-color: #414042;
+    --bs-pagination-border-radius: .462rem;
 }
 .active>.page-link, .page-link.active {background-color: #F4840D;}
 
@@ -65,7 +68,7 @@ a:active {color: #2E89FF;}
 @media screen and (max-width: 43.75rem){.banner-title {font-size: 0.9em; letter-spacing: -1px;}.banner-subtitle {font-size: 0.6em; letter-spacing: normal;}}
 
 /* HIDDEN WHEN SCREEN SMALL */
-@media screen and (max-width: 43.75rem){#s-lib-bc, #mobile-hidden, #s-lg-az-search-bar, #s-lg-az-popular, #s-lg-az-trials, #s-lg-az-icon-legend {display: none;}}
+@media screen and (max-width: 43.75rem){#mobile-hidden, #s-lg-az-search-bar, #s-lg-az-popular, #s-lg-az-trials, #s-lg-az-icon-legend {display: none;}#s-lib-bc {font-size: ;}}
 @media screen and (max-width: 992px){#hide-chat {display: none;}}
 
 /* AZ */
@@ -76,7 +79,7 @@ a:active {color: #2E89FF;}
 .s-lg-az-result-badge-new {background-color: #BFCB41; color: black;}
 #az-public-mobile-filters .btn-primary {background-color: #e1251b; border-color: #A01713;}
 #az-public-mobile-filters .btn-primary:hover {background-color: #A01713; border-color: #540E0C;}
-#s-lg-az-popular, #s-lg-az-trials {background-color: #F0F0F0; border-radius: .462rem;}
+#s-lg-az-popular, #s-lg-az-trials {background-color: inherit; border: .1rem solid black; border-radius: .462rem;}
 #s-lg-az-icon-legend div.az-icon-legend-key>img {width: auto; height: 16px;}
 #s-lg-az-filter-cols div.row {border-radius: .462rem;}
 #s-lg-az-filter-cols div.row>div {border-radius: 0;}
