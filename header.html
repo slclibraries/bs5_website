@@ -1,121 +1,208 @@
-  <header class="py-3" id="mobile-hidden">
-    <div class="container-md d-flex flex-wrap justify-content-center">
+<div class="fixed-top" id="pop">
+  <span class="d-flex flex-wrap justify-content-center py-3" id="mobile-hidden">
       <a href="/" class="d-flex align-items-center mx-5 me-lg-auto text-decoration-none">
         <span class="fs-2 banner-title">St. Lawrence College Libraries</span>
       </a>
-      <span id="hide-chat" class="col-12 col-lg-auto mb-3 mb-lg-0">
+      <span id="hide-chat" class="d-flex align-items-center mx-5">
         <div class="needs-js">chat loading...</div>
       </span>
-    </div>
-  </header>
-  <nav class="navbar navbar-expand-lg" id="nav-styles">
-<div class="container-lg">
-      <a class="navbar-brand text-light" href="https://stlawrencecollege.libguides.com"><span id="goaway"><b>Home</b><span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="nav-padding">Resources</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/audiobooks">Audiobooks</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/databases">Databases</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/flipster">Digital Magazines&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/ebooks">eBooks</a></li>
-                <li><a class="dropdown-item" href="https://librarysearch.stlawrencecollege.ca/discovery/jsearch?vid=01OCLS_STLAW:STLAW" target="_blank">Journals</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/newspapers">Newspapers</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/music">Streaming Music</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/videos">Streaming Video</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/textbooks">Textbooks</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li class="dropdown-item disabled cus-black-text"><b>Page 1+</b></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="https://librarysearch.stlawrencecollege.ca/discovery/search?vid=01OCLS_STLAW:STLAW">Search the tri-campus libraries</a></li>
-              </ul>
+  </span>
+  
+	<nav class="navbar navbar-expand-lg" id="nav-styles">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="https://stlawrencecollege.libguides.com"><span id="goaway"><b>Home</b><span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse container" id="navMenu">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="menuNav" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Resources
+              </a>
+              <!-- Dropdown menu -->
+              <div class="dropdown-menu w-100 mt-0" aria-labelledby="menuNav" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                <div class="container">
+                  <div class="row my-4">
+                    <p class="lead fw-semibold text-center">Resources</p>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                      <div class="list-group list-group-flush">
+                        <a href="https://stlawrencecollege.libguides.com/audiobooks" class="list-group-item list-group-item-action">Audiobooks</a>
+                        <a href="https://stlawrencecollege.libguides.com/applied-research" class="list-group-item list-group-item-action">Applied Research</a>
+                        <a href="https://stlawrencecollege.libguides.com/databases" class="list-group-item list-group-item-action">Databases</a>
+                        <a href="https://stlawrencecollege.libguides.com/flipster" target="_blank" class="list-group-item list-group-item-action">Digital Magazines</a>
+                        <a href="https://stlawrencecollege.libguides.com/ebooks" class="list-group-item list-group-item-action">eBooks</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                      <div class="list-group list-group-flush">
+                        <a href="https://stlawrencecollege.libguides.com/global" class="list-group-item list-group-item-action">Global Learning</a>
+                        <a href="https://stlawrencecollege.libguides.com/indigenous" class="list-group-item list-group-item-action">Indigenous Collections</a>
+                        <a href="https://librarysearch.stlawrencecollege.ca/discovery/jsearch?vid=01OCLS_STLAW:STLAW" target="_blank" class="list-group-item list-group-item-action">Journals</a>
+                        <a href="https://tlp-lpa.ca/home" target="_blank" class="list-group-item list-group-item-action">The Learning Portal</a>
+                        <a href="https://stlawrencecollege.libguides.com/newspapers" class="list-group-item list-group-item-action">Newspapers</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                      <div class="list-group list-group-flush">
+                        <a href="https://stlawrencecollege.libguides.com/whats-new" class="list-group-item list-group-item-action">New Titles</a>
+                        <a href="https://stlawrencecollege.libguides.com/online" class="list-group-item list-group-item-action">Online Learning</a>
+                        <a href="https://stlawrencecollege.libguides.com/oer" class="list-group-item list-group-item-action">Open Access &amp; OERs</a>
+                        <a href="https://stlawrencecollege.libguides.com/music" class="list-group-item list-group-item-action">Streaming Music</a>
+                        <a href="https://stlawrencecollege.libguides.com/videos" class="list-group-item list-group-item-action">Streaming Video</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <a href="https://librarysearch.stlawrencecollege.ca" class="list-group-item list-group-item-action">Search the library</a>
+                        <a href="https://stlawrencecollege.libguides.com/subject-guides" class="list-group-item list-group-item-action">Subject and Topic Guides</a>
+                        <a href="https://stlawrencecollege.libguides.com/textbooks" class="list-group-item list-group-item-action">Textbooks</a>
+                        <a href="https://stlawrencecollege.libguides.com/tutorials" class="list-group-item list-group-item-action">Tutorials</a>
+                        <a href="https://stlawrencecollege.libguides.com/virtualdisplays" class="list-group-item list-group-item-action">Virtual Displays</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="nav-padding">Points of Interest</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/applied-research">Applied Research</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/global">Global Learning</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/indigenous">Indigenous Collections</a></li>
-                <li><a class="dropdown-item" href="https://tlp-lpa.ca/home" target="_blank">The Learning Portal</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/whats-new">New Titles</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/oer">Open Access &amp; OERs</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/subject-guides">Subject and Topic Guides</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/virtualdisplays">Virtual Displays</a></li>
-              </ul>
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="menuNav" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Services
+              </a>
+              <!-- Dropdown menu -->
+              <div class="dropdown-menu w-100 mt-0" aria-labelledby="menuNav" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                <div class="container">
+                  <div class="row my-4">
+                    <p class="lead fw-semibold text-center">Services</p>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                      <div class="list-group list-group-flush">
+                        <a href="https://stlawrencecollege.libguides.com/welcome" class="list-group-item list-group-item-action">For Students</a>
+                        <a href="https://stlawrencecollege.libguides.com/faculty-services" class="list-group-item list-group-item-action">For Faculty</a>
+                        <a href="https://stlawrencecollege.libguides.com/nursing-faculty" class="list-group-item list-group-item-action">BScN @ SLC</a>
+                        <a href="https://stlawrencecollege.libguides.com/infolit" class="list-group-item list-group-item-action">Information Literacy</a>
+                        <a href="https://stlawrencecollege.libguides.com/coldev" class="list-group-item list-group-item-action">Purchase Requests</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                      <div class="list-group list-group-flush">
+                        <a href="https://stlawrencecollege.libguides.com/ill" class="list-group-item list-group-item-action">Interlibrary Loan</a>
+                        <a href="https://stlawrencecollege.libguides.com/renewing" class="list-group-item list-group-item-action">Renewing</a>
+                        <a href="https://stlawrencecollege.libguides.com/reserves" class="list-group-item list-group-item-action">Short-term Loans</a>
+                        <a href="https://stlawrencecollege.libguides.com/snap" class="list-group-item list-group-item-action">Study Night Against Procrastination (SNAP)</a>
+                        <a href="https://stlawrencecollege.libguides.com/study-spaces" class="list-group-item list-group-item-action">Study Space</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <a href="https://stlawrencecollege.libguides.com/blog" class="list-group-item list-group-item-action">Library Newsletter</a>
+                        <a href="https://stlawrencecollege.libguides.com/off-campus" class="list-group-item list-group-item-action">Off-campus Access</a>
+                        <a href="https://stlawrencecollege.libguides.com/borrowers" class="list-group-item list-group-item-action">Our Borrowers</a>
+                        <a href="https://stlawrencecollege.libguides.com/libraryaccount" class="list-group-item list-group-item-action">Your Account</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                      <div class="list-group list-group-flush">
+                        <a href="https://outlook.office365.com/owa/calendar/SLC1@stlawrencecollege.onmicrosoft.com/bookings/" target="_blank" class="list-group-item list-group-item-action">Book a Library Help Appointment</a>
+                        <a href="https://sl.mywconline.com/" target="_blank" class="list-group-item list-group-item-action">Book a Tutor Appointment</a>
+                        <a href="https://sl.mywconline.com/" target="_blank" class="list-group-item list-group-item-action">Book a Group Study Room</a>
+                        <a href="https://stlawrencecollege.libwizard.com/f/classroom-visits" target="_blank" class="list-group-item list-group-item-action">Book a Class Visit</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="nav-padding">For Students</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/welcome">For Students</a></li> 
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/reserves">Short-term Loans</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/ill">Interlibrary Loan</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/apa">APA &amp; Writing Help</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/mla">MLA &amp; Writing Help</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/s_nap">S_NAP</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/study-spaces">Study Space</a></li>
-                <li><a class="dropdown-item" href="https://outlook.office365.com/owa/calendar/SLC1@stlawrencecollege.onmicrosoft.com/bookings/">Book a Library Help Appointment&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
-                <li><a class="dropdown-item" href="https://sl.mywconline.com/">Book a Tutor Appointment&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
-                <li><a class="dropdown-item" href="https://sl.mywconline.com/">Book a Group Study Room&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
-              </ul>
-            </li>                
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="nav-padding">For Faculty</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/faculty-services">For Faculty</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/nursing-faculty">BScN @ SLC</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/reserves">Short-term Loans</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/ill">Interlibrary Loan</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/infolit">Information Literacy</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/coldev">Purchase Requests</a></li>
-                <li><a class="dropdown-item" href="https://forms.office.com/Pages/ResponsePage.aspx?id=JzlNl7SbyUi2XGCUOT0DC6FcWkRv6FJLh6EEZqO9LjFURU5NUlFXR0JWUEsyM1ExWkxWQ0FVUzJGWC4u">Book a Class Visit&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
-              </ul>
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="menuNav" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Find Help
+              </a>
+              <!-- Dropdown menu -->
+              <div class="dropdown-menu w-100 mt-0" aria-labelledby="menuNav" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                <div class="container">
+                  <div class="row my-4">
+                    <p class="lead fw-semibold text-center">Find Help</p>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                      <div class="list-group list-group-flush">
+                        <a href="https://stlawrencecollege.libguides.com/AcademicIntegrity" class="list-group-item list-group-item-action">Academic Integrity</a>
+                        <a href="https://stlawrencecollege.libguides.com/accessibility" target="_blank" class="list-group-item list-group-item-action">Accessibility</a>
+                        <a href="https://stlawrencecollege.libguides.com/copyright" class="list-group-item list-group-item-action">Copyright</a>
+                        <a href="https://stlawrencecollege.libguides.com/faq" class="list-group-item list-group-item-action">F.A.Qs</a>
+                        <a href="https://stlawrencecollege.libguides.com/policies" class="list-group-item list-group-item-action">Policies</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                      <div class="list-group list-group-flush">
+                        <a href="https://stlawrencecollege.libguides.com/apa" class="list-group-item list-group-item-action">APA &amp; Writing Help</a>
+                        <a href="https://stlawrencecollege.libguides.com/mla" class="list-group-item list-group-item-action">MLA &amp; Writing Help</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                      <div class="list-group list-group-flush">
+                        <a href="https://www.stlawrencecollege.ca/services/academic/academic-support-centre" target="_blank" class="list-group-item list-group-item-action">Academic Support Centre</a>
+                        <a href="https://www.stlawrencecollege.ca/services/academic/peer-tutoring" target="_blank" class="list-group-item list-group-item-action">Peer Tutoring</a>
+                        <a href="https://www.stlawrencecollege.ca/services/academic/student-success-facilitator" target="_blank" class="list-group-item list-group-item-action">Student Success Facilitators</a>
+                        <a href="https://www.stlawrencecollege.ca/services/student-wellness-and-accessibility" target="_blank" class="list-group-item list-group-item-action">Student Wellness and Accessibility</a>
+                        <a href="https://www.stlawrencecollege.ca/services/student-life/student-rights-and-responsibility-office" target="_blank" class="list-group-item list-group-item-action">Student Rights and Responsibility Office</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                      <div class="list-group list-group-flush">
+                        <a href="https://www.stlawrencecollege.ca/services/campus-services/information-technology-services-its" target="_blank" class="list-group-item list-group-item-action">Information Technology Services (ITS)</a>
+                        <a href="https://www.stlawrencecollege.ca/fees/bursaries-and-scholarships" target="_blank" class="list-group-item list-group-item-action">Bursaries and Scholarships</a>
+                        <a href="https://www.stlawrencecollege.ca/about/careers-at-slc/student-employment" target="_blank" class="list-group-item list-group-item-action">Student Employment</a>
+                        <a href="http://slc.me/" target="_blank" class="list-group-item list-group-item-action">SLC.me</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="nav-padding">Using the Library</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/AcademicIntegrity">Academic Integrity</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/accessibility">Accessibility</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/copyright">Copyright</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/faq">F.A.Qs</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/blog">Library Newsletter</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/off-campus">Off-campus Access</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/borrowers">Our Borrowers</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/policies">Policies</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/renewing">Renewing</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/libraryaccount">Your Account</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li class="dropdown-item disabled cus-black-text"><b>Alumni &amp; Community</b></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/borrowers">For Alumni &amp; Community</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="nav-padding">Connect with Us</a>
-              <ul class="dropdown-menu dropdown-menu-lg-end">
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/contact">Contact Information</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/hours">Hours Information</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/coldev">Purchase Requests</a></li>
-                <li><a class="dropdown-item" href="https://www.stlawrencecollege.ca/" target="_blank">St. Lawrence College Homepage&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li class="dropdown-item disabled cus-black-text"><b>Get Help</b></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="https://www.stlawrencecollege.ca/services/academic/academic-support-centre">Academic Support Centre&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
-                <li><a class="dropdown-item" href="https://www.stlawrencecollege.ca/services/academic/peer-tutoring">Peer Tutoring&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/welcome">How to use the Library</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/online">Online Learning</a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/tutorials">Tutorials</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li class="dropdown-item disabled cus-black-text"><b>Follow us</b></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="https://linktr.ee/slclibraries">@SLCLibraries&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
-                <li><a class="dropdown-item" href="https://stlawrencecollege.libguides.com/events-at-slc">Events at SLC</a></li>
-              </ul>
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="menuNav" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Connect with us
+              </a>
+              <!-- Dropdown menu -->
+              <div class="dropdown-menu w-100 mt-0" aria-labelledby="menuNav" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                <div class="container">
+                  <div class="row my-4">
+                    <p class="lead fw-semibold text-center">Connect with us</p>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                      <div class="list-group list-group-flush">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                      <div class="list-group list-group-flush">
+                        <a href="https://stlawrencecollege.libguides.com/contact" class="list-group-item list-group-item-action">Contact Information</a>
+                        <a href="https://stlawrencecollege.libguides.com/hours" class="list-group-item list-group-item-action">Hours Information</a>
+                        <a href="https://stlawrencecollege.libguides.com/contests" target="_blank" class="list-group-item list-group-item-action">Contests</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                      <div class="list-group list-group-flush">
+                        <a href="https://linktr.ee/slclibraries" class="list-group-item list-group-item-action">@SLCLibraries</a>
+                        <a href="https://stlawrencecollege.libguides.com/events-at-slc" class="list-group-item list-group-item-action">Events at SLC</a>
+                        <a href="https://www.stlawrencecollege.ca/" target="_blank" class="list-group-item list-group-item-action">St. Lawrence College</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                      <div class="list-group list-group-flush">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
-    </div>
-  </div>
-  </nav>
+        </div>
+      </div>
+    </nav>
+</div>
