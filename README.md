@@ -10,7 +10,7 @@ This code goes in Admin -> Look & Feel (Beta) -> System Settings -> Pages Look &
 ### look_feel.css
 This code goes in Admin -> Look & Feel (Beta) -> System Settings -> Pages Look & Feel -> Custom JS/CSS -> Custom CSS.
 
-### look_feel_js.js
+### look_feel.js
 This code goes in Admin -> Look & Feel (Beta) -> System Settings -> Pages Look & Feel -> Custom JS/CSS -> Custom JS.
 
 ### primo_searchbox.html
