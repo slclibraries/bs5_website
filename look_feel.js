@@ -12,7 +12,7 @@ var currentScrollPos = window.pageYOffset;
     document.getElementById("pop").style.top = "0";
   } else {
     document.getElementById("lib-chat-button").style.bottom = "-50px";
-    document.getElementById("pop").style.top = "-150px";
+    document.getElementById("pop").style.top = "-143px";
   }
   prevScrollpos = currentScrollPos;
 }
