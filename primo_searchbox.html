@@ -1,0 +1,31 @@
+<form class="primove-single-search" id="simple" name="searchForm" method="get" action="https://librarysearch.stlawrencecollege.ca/discovery/search" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
+    <p>
+        <input type="hidden" name="vid" value="01OCLS_STLAW:STLAW">
+         
+        <input type="hidden" name="tab" value="Everything">
+         
+        <input type="hidden" name="search_scope" value="MyInst_and_CI">
+         
+        <input type="hidden" name="lang" value="en">
+    </p>
+    <div class="primove-search-container">
+        <div class="primove-search">
+            <p>
+                <b id="primoveText"><strong>Search the Library Collections</strong></b> <img src="https://libapps-ca.s3.amazonaws.com/customers/3698/images/st-lawrence-powered-by-page-1_-eng-logo-cmyk-black.png" title="Powered by Page 1+" id="primoveImage">
+            </p>
+            <div class="primove-search__box">
+                <input type="hidden" name="query" id="primoQuery">
+                 
+                <input class="primove-search__input-bquery" type="text" id="primoQueryTemp" placeholder="Search for books, video, articles, and more...">
+                 <button class="primove-search__submit-button" id="go" onclick="searchPrimo()" type="button">
+                                          
+                                
+                <div class="primove-search__submit-text">
+                                        Search
+                                    
+                </div>
+                                        </button>
+            </div>
+        </div>
+    </div>
+</form>
