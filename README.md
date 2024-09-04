@@ -12,6 +12,7 @@ This code goes in Admin -> Look & Feel (Beta) -> System Settings -> Pages Look &
 
 ### look_feel.js
 This code goes in Admin -> Look & Feel (Beta) -> System Settings -> Pages Look & Feel -> Custom JS/CSS -> Custom JS.
+The top (PRIMO) code chunk is for the Header JS Code, and the bottom (chat) is for Footer JS Code.
 
 ### primo_searchbox.html
-Bootstrap 5 version coming soon! (i hope)
+A basic search box for ALMA/PRIMO(VE).
