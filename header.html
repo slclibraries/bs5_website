@@ -1,20 +1,31 @@
-<div class="fixed-top" id="pop">
- <span class="d-flex flex-wrap justify-content-center py-3" id="mobile-hidden">
-      <a href="/" class="d-flex align-items-center mx-5 me-lg-auto text-decoration-none">
-        <img src="https://libapps-ca.s3.amazonaws.com/customers/3698/images/Libraries_LearningCentres_Horiz.png"/>
-      </a>
-  <span style="display:block;">
-    <h2 class="title text-center"><i class="bi bi-clock"></i>&nbsp;Today's Hours</h2>
-    <div id="api_hours_today_iid4183_lid0"></div><script src="https://stlawrencecollege.libcal.com/api_hours_today.php?iid=4183&lid=0&format=js&systemTime=0&context=object"> </script>
-  </span>
-  <span id="hide-chat" class="d-flex align-items-center mx-5">
-    <div class="needs-js">chat loading...</div>
-  </span>
+ <!-- Start Header -->
+<ul class="nav justify-content-end" id="mobile-hidden">
+  <li class="nav-item">
+    <a class="nav-link" href="https://librarysearch.stlawrencecollege.ca/discovery/account?vid=01OCLS_STLAW:STLAW" role="button" aria-expanded="false" title="My Library Card" target="_blank">
+                <i class="bi bi-person-vcard-fill"></i> My Library Account
+              </a>
+  </li>
+  <li class="nav-item">
+               <a class="nav-link" role="button" data-bs-toggle="modal" data-bs-target="#service">
+                <i class="bi bi-info-circle-fill"></i> Service Status
+              </a>
+  </li>
+</ul>
+<span class="d-flex flex-wrap justify-content-center py-3" id="mobile-hidden">
+      <span class="d-flex align-items-center mx-5 me-lg-auto text-decoration-none">
+        <a href="https://stlawrencecollege.libguides.com"><img alt="st. lawrence college" src="https://libapps-ca.s3.amazonaws.com/customers/3698/images/Libraries_LearningCentres_Horiz.png"></a>
+      </span>
+  <span class="today-hours" style="display:block;">
+    <span class="title h5"><i class="bi bi-clock"></i>&nbsp;Today's Hours</span>
+    <hr style="height:2px;margin:2px;">
+    <span id="api_hours_today_iid4183_lid0"></span><script src="https://stlawrencecollege.libcal.com/api_hours_today.php?iid=4183&lid=0&format=js&systemTime=0&context=object"></script></span>
  </span>
+<!-- End Header -->
   
-	<nav class="navbar navbar-expand-lg" id="nav-styles">
+<!-- Start Nav -->
+    <nav class="navbar navbar-expand-xl" id="nav-styles">
       <div class="container-fluid">
-        <a class="navbar-brand text-light" href="https://stlawrencecollege.libguides.com"><span id="goaway"><b>Home</b><span></a>
+        <a class="navbar-brand text-light" href="https://stlawrencecollege.libguides.com" id="goaway"><b>Home</b></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
           aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
           <i class="bi bi-list"></i>
@@ -23,18 +34,18 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <!-- Home -->
             <li class="nav-item dropdown position-static">
-              <a class="nav-link text-light" href="https://stlawrencecollege.libguides.com" id="menuNav" role="button" aria-expanded="false" title="My Library Card">
-                <i class="bi bi-house-fill"></i> Home
+              <a class="nav-link text-light" href="https://stlawrencecollege.libguides.com" role="button" aria-expanded="false" title="Library Homepage">
+                Home
               </a>
             </li>
             <!-- Navbar dropdown -->
             <li class="nav-item dropdown position-static">
-              <a class="nav-link dropdown-toggle text-light" href="#" id="menuNav" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Resources
               </a>
               <!-- Dropdown menu -->
-              <div class="dropdown-menu w-100 mt-0" aria-labelledby="menuNav" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+              <div class="dropdown-menu w-100 mt-0" style="border-top-left-radius: 0;border-top-right-radius: 0;">
                 <div class="container">
                   <div class="row my-4">
                     <p class="lead fw-semibold text-center">Resources</p>
@@ -42,25 +53,25 @@
                       <div class="list-group list-group-flush">
                         <a href="https://stlawrencecollege.libguides.com/applied-research" class="list-group-item list-group-item-action">Applied Research</a>
                         <a href="https://stlawrencecollege.libguides.com/audiobooks" class="list-group-item list-group-item-action">Audiobooks</a>
-                        <a href="https://stlawrencecollege.libguides.com/databases" class="list-group-item list-group-item-action">Databases</a>
-                        <a href="https://stlawrencecollege.libguides.com/flipster" target="_blank" class="list-group-item list-group-item-action">Digital Magazines</a>
+                        <a href="https://stlawrencecollege.libguides.com/databases" class="list-group-item list-group-item-action">A-Z Databases</a>
                         <a href="https://stlawrencecollege.libguides.com/ebooks" class="list-group-item list-group-item-action">eBooks</a>
+                        <a href="https://stlawrencecollege.libguides.com/global" class="list-group-item list-group-item-action">Global Learning</a>
                       </div>
                     </div>
                     <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
                       <div class="list-group list-group-flush">
-                        <a href="https://stlawrencecollege.libguides.com/global" class="list-group-item list-group-item-action">Global Learning</a>
                         <a href="https://stlawrencecollege.libguides.com/indigenous" class="list-group-item list-group-item-action">Indigenous Collections</a>
+                        <a href="https://stlawrencecollege.libguides.com/az/oars" class="list-group-item list-group-item-action">A-Z Internet Resources</a>
                         <a href="https://librarysearch.stlawrencecollege.ca/discovery/jsearch?vid=01OCLS_STLAW:STLAW" target="_blank" class="list-group-item list-group-item-action">Journals</a>
-                        <a href="https://tlp-lpa.ca/home" target="_blank" class="list-group-item list-group-item-action">The Learning Portal</a>
                         <a href="https://stlawrencecollege.libguides.com/newspapers" class="list-group-item list-group-item-action">Newspapers</a>
+                        <a href="https://stlawrencecollege.libguides.com/whats-new" class="list-group-item list-group-item-action">New Titles</a>
                       </div>
                     </div>
                     <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
                       <div class="list-group list-group-flush">
-                        <a href="https://stlawrencecollege.libguides.com/whats-new" class="list-group-item list-group-item-action">New Titles</a>
                         <a href="https://stlawrencecollege.libguides.com/online" class="list-group-item list-group-item-action">Online Learning</a>
-                        <a href="https://stlawrencecollege.libguides.com/oer" class="list-group-item list-group-item-action">Open Access &amp; OERs</a>
+                        <a href="https://stlawrencecollege.libguides.com/oer" class="list-group-item list-group-item-action">Open Education Resources</a>
+                        <a href="https://stlawrencecollege.libguides.com/sctl" class="list-group-item list-group-item-action">Scholarship of Teaching and Learning</a>
                         <a href="https://stlawrencecollege.libguides.com/music" class="list-group-item list-group-item-action">Streaming Music</a>
                         <a href="https://stlawrencecollege.libguides.com/videos" class="list-group-item list-group-item-action">Streaming Video</a>
                       </div>
@@ -70,7 +81,6 @@
                         <a href="https://librarysearch.stlawrencecollege.ca/discovery/collectionDiscovery?vid=01OCLS_STLAW:STLAW" class="list-group-item list-group-item-action">Special Collections</a>
                         <a href="https://stlawrencecollege.libguides.com/subject-guides" class="list-group-item list-group-item-action">Subject and Topic Guides</a>
                         <a href="https://stlawrencecollege.libguides.com/textbooks" class="list-group-item list-group-item-action">Textbooks</a>
-                        <a href="https://stlawrencecollege.libguides.com/tutorials" class="list-group-item list-group-item-action">Tutorials</a>
                         <a href="https://stlawrencecollege.libguides.com/virtualdisplays" class="list-group-item list-group-item-action">Virtual Displays</a>
                       </div>
                     </div>
@@ -80,46 +90,46 @@
             </li>
             <!-- Navbar dropdown -->
             <li class="nav-item dropdown position-static">
-              <a class="nav-link dropdown-toggle text-light" href="#" id="menuNav" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Services
               </a>
               <!-- Dropdown menu -->
-              <div class="dropdown-menu w-100 mt-0" aria-labelledby="menuNav" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+              <div class="dropdown-menu w-100 mt-0" style="border-top-left-radius: 0;border-top-right-radius: 0;">
                 <div class="container">
                   <div class="row my-4">
                     <p class="lead fw-semibold text-center">Services</p>
                     <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
                       <div class="list-group list-group-flush">
-                        <a href="https://stlawrencecollege.libguides.com/welcome" class="list-group-item list-group-item-action">For Students</a>
-                        <a href="https://stlawrencecollege.libguides.com/faculty-services" class="list-group-item list-group-item-action">For Faculty</a>
+                        <a href="https://stlawrencecollege.libguides.com/borrowing-services" class="list-group-item list-group-item-action">Borrowing Services</a>
+                        <a href="https://stlawrencecollege.libguides.com/faculty-services" class="list-group-item list-group-item-action">Faculty Services</a>
                         <a href="https://stlawrencecollege.libguides.com/infolit" class="list-group-item list-group-item-action">Information Literacy</a>
-                        <a href="https://stlawrencecollege.libguides.com/coldev" class="list-group-item list-group-item-action">Purchase Requests</a>
-                        <a href="https://stlawrencecollege.libguides.com/snap" class="list-group-item list-group-item-action">Study Night Against Procrastination (SNAP)</a>
+                        <a href="https://librarysearch.stlawrencecollege.ca/" class="list-group-item list-group-item-action">Library Catalogue</a>
+                        <a href="https://stlawrencecollege.libguides.com/off-campus" class="list-group-item list-group-item-action">Off-campus Access</a>
                       </div>
                     </div>
                     <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
                       <div class="list-group list-group-flush">
-                        <a href="https://stlawrencecollege.libguides.com/ill" class="list-group-item list-group-item-action">Interlibrary Loan</a>
+                        <a href="https://stlawrencecollege.libguides.com/coldev" class="list-group-item list-group-item-action">Purchase Requests</a>
                         <a href="https://stlawrencecollege.libguides.com/renewing" class="list-group-item list-group-item-action">Renewing</a>
-                        <a href="https://stlawrencecollege.libguides.com/reserves" class="list-group-item list-group-item-action">Short-term Loans</a>
-                        <a href="https://stlawrencecollege.libcal.com/" class="list-group-item list-group-item-action">Study Space</a>
-                        <a href="https://stlawrencecollege.libguides.com/tutoring" class="list-group-item list-group-item-action">Tutoring</a>
+                        <a href="https://stlawrencecollege.libguides.com/ill" class="list-group-item list-group-item-action">Resource Sharing</a>
+                        <a href="https://stlawrencecollege.libguides.com/student-services" class="list-group-item list-group-item-action">Student Services</a>
+                        <a href="https://stlawrencecollege.libguides.com/snap" class="list-group-item list-group-item-action">Study Night Against Procrastination</a>
                       </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                       <div class="list-group list-group-flush">
-                        <a href="https://librarysearch.stlawrencecollege.ca/" class="list-group-item list-group-item-action">Library Catalogue</a>
-                        <a href="https://stlawrencecollege.libguides.com/blog" class="list-group-item list-group-item-action">Library Newsletter</a>
-                        <a href="https://stlawrencecollege.libguides.com/off-campus" class="list-group-item list-group-item-action">Off-campus Access</a>
-                        <a href="https://stlawrencecollege.libguides.com/borrowers" class="list-group-item list-group-item-action">Our Borrowers</a>
+                        <a href="https://stlawrencecollege.libcal.com/" class="list-group-item list-group-item-action">Study Space</a>
+                        <a href="https://stlawrencecollege.libguides.com/therapy-dogs" class="list-group-item list-group-item-action">Therapy Dogs</a>
+                        <a href="https://stlawrencecollege.libguides.com/tutoring" class="list-group-item list-group-item-action">Tutoring</a>
                         <a href="https://stlawrencecollege.libguides.com/libraryaccount" class="list-group-item list-group-item-action">Your Account</a>
                       </div>
                     </div>
                     <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
                       <div class="list-group list-group-flush">
-                        <a href="https://stlawrencecollege.libguides.com/library-appointment" target="_blank" class="list-group-item list-group-item-action">Book a Library Help Appointment</a>
-                        <a href="https://sl.mywconline.com/" target="_blank" class="list-group-item list-group-item-action">Book a Tutor Appointment</a>
+                        <a href="https://stlawrencecollege.libguides.com/appointments" target="_blank" class="list-group-item list-group-item-action">Book a Library Appointment</a>
+                        <a href="https://sl.mywconline.com/" target="_blank" class="list-group-item list-group-item-action">Book an Academic Tutor Appointment</a>
+                        <a href="https://www.stlawrencecollege.ca/services/academic/peer-tutoring" target="_blank" class="list-group-item list-group-item-action">Find a Peer Tutor</a>
                         <a href="https://stlawrencecollege.libcal.com/" target="_blank" class="list-group-item list-group-item-action">Book a Group Study Room</a>
                         <a href="https://stlawrencecollege.libwizard.com/f/classroom-visits" target="_blank" class="list-group-item list-group-item-action">Book a Class Visit</a>
                       </div>
@@ -130,12 +140,12 @@
             </li>
             <!-- Navbar dropdown -->
             <li class="nav-item dropdown position-static">
-              <a class="nav-link dropdown-toggle text-light" href="#" id="menuNav" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Find Help
               </a>
               <!-- Dropdown menu -->
-              <div class="dropdown-menu w-100 mt-0" aria-labelledby="menuNav" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+              <div class="dropdown-menu w-100 mt-0" style="border-top-left-radius: 0;border-top-right-radius: 0;">
                 <div class="container">
                   <div class="row my-4">
                     <p class="lead fw-semibold text-center">Find Help</p>
@@ -153,6 +163,8 @@
                         <a href="https://stlawrencecollege.libguides.com/apa" class="list-group-item list-group-item-action">APA Citation Help</a>
                         <a href="https://stlawrencecollege.libguides.com/mla" class="list-group-item list-group-item-action">MLA Citation Help</a>
                         <a href="https://stlawrencecollege.libguides.com/library-appointment" class="list-group-item list-group-item-action">Research Help</a>
+                        <a href="https://tlp-lpa.ca/home" target="_blank" class="list-group-item list-group-item-action">The Learning Portal</a>
+                        <a href="https://stlawrencecollege.libguides.com/tutorials" class="list-group-item list-group-item-action">Tutorials</a>
                       </div>
                     </div>
                     <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
@@ -178,36 +190,39 @@
             </li>
             <!-- Navbar dropdown -->
             <li class="nav-item dropdown position-static">
-              <a class="nav-link dropdown-toggle text-light" href="#" id="menuNav" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Connect with us
               </a>
               <!-- Dropdown menu -->
-              <div class="dropdown-menu w-100 mt-0" aria-labelledby="menuNav" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+              <div class="dropdown-menu w-100 mt-0" style="border-top-left-radius: 0;border-top-right-radius: 0;">
                 <div class="container">
                   <div class="row my-4">
                     <p class="lead fw-semibold text-center">Connect with us</p>
                     <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
                       <div class="list-group list-group-flush">
-                        <a href="https://stlawrencecollege.libguides.com/contact" class="list-group-item list-group-item-action">Contact Information</a>
-                        <a href="https://stlawrencecollege.libguides.com/hours" class="list-group-item list-group-item-action">Hours Information</a>
                         <a href="https://linktr.ee/slclibraries" target="_blank" class="list-group-item list-group-item-action">@SLCLibraries</a>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                      <div class="list-group list-group-flush">
+                        <a href="https://stlawrencecollege.libguides.com/contact" class="list-group-item list-group-item-action">Contact Information</a>
                         <a href="https://stlawrencecollege.libguides.com/contests" target="_blank" class="list-group-item list-group-item-action">Contests</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                      <div class="list-group list-group-flush">
                         <a href="https://stlawrencecollege.libguides.com/events-at-slc" class="list-group-item list-group-item-action">Events at SLC</a>
-                        <a href="https://stlawrencecollege.libguides.com/sitemap" class="list-group-item list-group-item-action">Site Map</a>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                      <div class="list-group list-group-flush">
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                      <div class="list-group list-group-flush">
                         <a href="https://stlawrencecollege.libguides.com/health-safety" class="list-group-item list-group-item-action">Health and Safety</a>
+                        <a href="https://stlawrencecollege.libguides.com/hours" class="list-group-item list-group-item-action">Hours Information</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                      <div class="list-group list-group-flush">
+                        <a href="https://stlawrencecollege.libguides.com/blogs/news" class="list-group-item list-group-item-action">Library Newsletter</a>
+                        <a href="https://stlawrencecollege.libguides.com/contact/services" class="list-group-item list-group-item-action">Service Directory</a>
+                        <a href="https://stlawrencecollege.libguides.com/contact/staff" class="list-group-item list-group-item-action">Staff Directory</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                      <div class="list-group list-group-flush">
+                        <a href="https://stlawrencecollege.libguides.com/sitemap" class="list-group-item list-group-item-action">Site Map</a>
                         <a href="https://stlawrencecollege.libguides.com/copyright-notice" class="list-group-item list-group-item-action">Copyright Notice</a>
                         <a href="https://stlawrencecollege.libguides.com/privacy-notice" class="list-group-item list-group-item-action">Privacy Notice</a>
                       </div>
@@ -216,14 +231,38 @@
                 </div>
               </div>
             </li>
-            <!-- Library Account -->
-            <li class="nav-item dropdown position-static">
-              <a class="nav-link text-light" href="https://librarysearch.stlawrencecollege.ca/discovery/account?vid=01OCLS_STLAW:STLAW" id="menuNav" role="button" aria-expanded="false" title="My Library Card">
-                <i class="bi bi-person-vcard-fill"></i> My Library Account
-              </a>
-            </li>
           </ul>
+<form class="d-flex" role="search" action="https://stlawrencecollege.libguides.com/srch.php">
+	<div class="form-group">
+		<label for="libguide-search" class="sr-only">Search</label>
+		<div class="input-group">
+			<input type="search" id="libguide-search" name="q" class="form-control" value="" autocomplete="off" aria-label="Search field" placeholder="Search the library website..." />
+			<span class="input-group-btn">
+				<button class="btn btn-search" type="submit">Search</button>
+			</span>
+		</div>
+	</div>
+</form>
         </div>
       </div>
     </nav>
+<!-- End Nav -->
+
+<!-- Start Modal -->
+<div class="modal fade" id="service" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Service Notice(s)</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+            <script>springshare_widget_config_1710158318798 = { path: 'boxes/16769235', link_text: 'Content Box' };</script><div id="s-lg-widget-1710158318798"></div><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://lgapi-ca.libapps.com/widgets.php?site_id=6356&widget_type=8&output_format=1&widget_title=modal+box+%28do+not+unhide%29&widget_height=&widget_width=&widget_embed_type=1&guide_id=669678&box_id=16769235&map_id=19802234&content_only=0&include_jquery=0&config_id=1710158318798";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","s-lg-widget-script-1710158318798");</script>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
+<!-- End Modal -->
